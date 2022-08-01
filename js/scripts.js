@@ -29,3 +29,24 @@ const navegacion = document.querySelector('.navegacion');
 navegacion.appendChild(nuevoEnlace);
 
 console.log(nuevoEnlace);
+
+/*  Eventos */
+console.log(1);
+
+window.addEventListener('Load', function(){ // Load espera a que el JS y los archivos del HTML esten listos para ejecutarse.
+    console.log(2);
+});
+
+window.onload = function(){
+    console.log(3);
+}
+
+document.addEventListener('DOMContentLoaded', function(){ // Load espera a que el HTML se carge. Sin esperar las imagenes o el CSS
+    console.log(4);
+});
+    
+console.log(5);
+
+window.onscroll =function() {
+    console.log('scrolling...');
+}
