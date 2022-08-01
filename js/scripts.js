@@ -24,6 +24,8 @@ nuevoEnlace.href = 'nuevo-enlace.html';
 nuevoEnlace.textContent = 'Un Nuevo Enlace';
 //  Agregar la clase
 nuevoEnlace.classList.add('navegacion__enlace');
+// Agregar al Documento
+const navegacion = document.querySelector('.navegacion');
 navegacion.appendChild(nuevoEnlace);
 
 console.log(nuevoEnlace);
